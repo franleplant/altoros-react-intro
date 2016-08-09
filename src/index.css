@@ -1,0 +1,53 @@
+
+.namep {
+  color: blue;
+  border: grey 1px solid;
+}
+
+.avatar {
+  border: grey 1px solid;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.select-container {
+  border: grey 1px solid;
+  display: inline-block;
+  padding: 5px;
+  min-width: 200px;
+}
+
+.select-option {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.select-arrow {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 5px;
+  background: white;
+  border: 0px;
+  right: 0px;
+}
+
+
+
+.select-list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.select-list-element {
+  padding: 5px 0px;
+  margin: 0;
+}
+
+.select-list-element:hover {
+  background: grey;
+}
