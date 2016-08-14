@@ -11,7 +11,7 @@ class NameP extends Component {
 
 export default function ex1() {
   ReactDOM.render(
-    <NameP name="Pablo Fullana" />,
+    <NameP name="Altoros" />,
     document.getElementById('root')
   );
 }

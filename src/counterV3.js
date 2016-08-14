@@ -21,11 +21,8 @@ class CountState extends Component {
     }
 
     setInterval(_ => {
-      this.setState(state => {
-        debugger;
-        return {
-          count: state.count++
-        }
+      this.setState({
+          count: this.state.count + 1
       })
     }, 1000);
   }

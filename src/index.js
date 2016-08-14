@@ -13,12 +13,12 @@ import ex5 from './children';
 
 
 
-//ex1();
+ex1();
 //ex1v2();
 //ex2();
 //ex3();
 //ex3v2();
-ex3v3();
+//ex3v3();
 //ex4();
 //ex5();
 
