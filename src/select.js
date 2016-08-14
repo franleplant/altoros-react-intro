@@ -1,10 +1,10 @@
+import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
-
 
 const COLORS = ['Rojo', 'Verde', 'Azul']
 const DEFMESSAGE = 'Seleccione un Color'
 
-export default class Select extends Component {
+class Select extends Component {
   constructor(props) {
     super(props);
 
@@ -31,14 +31,16 @@ export default class Select extends Component {
     });
   }
 
-  // TODO show jsx
   render() {
     let list;
     if (this.state.open) {
       list = (
         <ul className="select-list-container">
           {COLORS.map(color => (
-            <li className="select-list-element" key={color} onClick={_ => this.handleOptionClick(color)}>
+            <li
+            className="select-list-element"
+            key={color}
+            onClick={_ => this.handleOptionClick(color)}>
               <p className="select-option">{color}</p>
             </li>
           ))}
@@ -57,4 +59,11 @@ export default class Select extends Component {
       </div>
     );
   }
+}
+
+export default function ex4() {
+  ReactDOM.render(
+    <Select/>,
+    document.getElementById('root')
+  );
 }
